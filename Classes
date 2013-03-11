@@ -1,0 +1,40 @@
+Class Main
+
+- userInput : String
+- outputMessage : String
+____________________________
++ setUserInput () : String
++ encodeMessage () : String
++ displayEncodedMessage ()
+
+
+
+Class PatchPanel
+- subValue : int [ ]
+____________________________
+<< constructor >> + PatchPanel ( configData : String )
++ substitute (inputValue : int) : int
+
+
+Class Rotors
+- rotor1Val : int [ ]
+- rotor1Tick : int
+- rotor1Pos : int
+- rotor2Val : int [ ]
+- rotor2Tick : int
+- rotor2Pos : int
+- rotor3Val : int [ ]
+- rotor3Tick : int
+- rotor3Pos : int
+____________________________
+<< constructor >> + Rotors (rotor1Config : String, rotor2Config : String, rotor3Config : String)
++ setRotorPosition (pos1 : char, pos2 : char, pos3 : char)
++ getForward(rawValue : int) : int
++ getBackward(rawValue : int) : int
++ tickNext ()
+
+
+Class Reflector
+- valueTable : int [ ]
+____________________________
++ getValue (rawValue : int) : int
